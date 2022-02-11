@@ -1,12 +1,19 @@
+// array for card numbers
 let cards = []
+// ongoing score from cards
 let sum = 0
+// got blackjack or not
 let hasBlackJack = false
+// still in game or not
 let isAlive = false
+
+// UI display
 let message = ""
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
+// generating random card and converting to appropriate score (ace assumed 11 for now)
 function getRandomCard() {
     let randomNumer = Math.floor( Math.random()*13 ) + 1
     if (randomNumer > 10) {
@@ -18,6 +25,7 @@ function getRandomCard() {
     }
 }
 
+// generate first 2 cards when start game button clicked
 function startGame() {
     isAlive = true
     let firstCard = getRandomCard()
@@ -27,6 +35,7 @@ function startGame() {
     renderGame()
 }
 
+// update game when either startGame or newCard is called
 function renderGame() {
     cardsEl.textContent = "Cards: "
     for (let i = 0; i < cards.length; i++) {
@@ -46,9 +55,9 @@ function renderGame() {
     messageEl.textContent = message
 }
 
-
+// generate new card if new card button is clicked
 function newCard() {
-    // Only allow the player to get a new card if she IS alive and does NOT have Blackjack
+    // Only allow the player to get a new card if alive and does NOT have Blackjack
     if (isAlive === true && hasBlackJack === false) {
         let card = getRandomCard()
         sum += card

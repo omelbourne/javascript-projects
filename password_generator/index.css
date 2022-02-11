@@ -1,0 +1,83 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #1C1C1C;
+    color: white;
+}
+
+#container {
+    width: 450px;
+    height: 380px;
+    padding: 50px;
+    padding-top: 120px;
+    margin: 20px auto;
+    background: #1F2937;
+    border-radius: 6px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 40px; 
+    color: white;
+    margin: 0;
+}
+
+#green-title {
+    color: #10B981;
+}
+
+p {
+    color: #D5D4D8;
+    font-size: 20px;
+}
+
+#generate {
+    width: 223px;
+    height: 42px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 0;
+    background: #10B981;
+    color: white;
+    font-size: 16px;
+}
+
+#generate-icon {
+    image-rendering: -webkit-optimize-contrast;
+    vertical-align: middle;
+    padding-right: 10px;
+    height: 18px;
+    width: 14px;
+}
+
+#dots-icon {
+    image-rendering: -webkit-optimize-contrast;
+    vertical-align: middle;
+    height: 5px;
+    width: 20px;
+}
+
+#break {
+    width: 100%;
+    height: 0px;
+    border: 1px solid #2F3E53;
+    margin-top: 40px;
+}
+
+#first-pass,
+#second-pass,
+#third-pass,
+#fourth-pass {
+    margin-top: 30px;
+    width: 211px;
+    height: 39px;
+    border: 0;
+    border-radius: 6px;
+    background: #273549;
+    color: white;
+}
+
+#second-pass,
+#fourth-pass {
+    float: right;
+}

@@ -1,0 +1,116 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #111827;
+    color: white;
+}
+
+#header {
+    width: 550px;
+    height: 190px;
+    background: #3A69D2;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#container {
+    width: 550px;
+    height: 529px;
+    background: #1F2937;
+    margin: 0 auto;  
+    padding: 41px 38px;  
+    box-sizing: border-box;
+}
+
+#heading {
+    font-weight: 800;
+    font-size: 40px;
+    padding-top:59px;
+    margin: 0;
+}
+
+#subheading {
+    font-size: 16px;
+}
+
+#item-left,
+#item-center,
+#item-right {
+    background: #D1D4F4;
+    width: 142px;
+    height: 45px;
+    border: 1px solid #D5D4D8;
+    border-radius: 7px;
+    color: #4A4E74;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#item-center {
+    margin: 0 18px;
+}
+
+#item-left:hover,
+#item-center:hover,
+#item-right:hover {
+    border: 2px solid white;
+}
+
+#item-headings {
+    font-size: 12px;
+    font-weight: bold;
+    color: #D5D4D8;
+}
+
+#divider {
+    width: 100%;
+    border: 1px solid #c3c6db;    
+}
+
+#items-holder {
+    min-height: 50px;
+}
+
+#total-amount {
+    float: right;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+#send {
+    margin-top: 50px;
+    width: 100%;
+    background: #3a69d2;
+    color: white;
+    font-size: 16px;
+    border-radius: 7px;
+    border: none;
+    height: 44px;
+}
+
+#send:hover {
+    border: 1px solid white;
+}
+
+#items {
+    font-size: 24px;
+}
+
+#remove {
+    color: #D5D4D8;
+    background: none;
+    border: none;
+    font-size: 9px;
+    vertical-align: middle;
+}
+
+button {
+    cursor: pointer;
+}
